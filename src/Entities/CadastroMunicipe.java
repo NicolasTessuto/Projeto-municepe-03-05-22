@@ -38,6 +38,41 @@ public class CadastroMunicipe {
     private boolean pretendeEstudar;
     private boolean dependentes;
 
+    @Override
+    public String toString() {
+        return "CadastroMunicipe{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", rg=" + rg +
+                ", titulo=" + titulo +
+                ", nascimento=" + nascimento +
+                ", naturalidade='" + naturalidade + '\'' +
+                ", nascionalidade='" + nascionalidade + '\'' +
+                ", estadoCivilEnum=" + estadoCivilEnum +
+                ", endereco=" + endereco +
+                ", fone='" + fone + '\'' +
+                ", celular='" + celular + '\'' +
+                ", dataChegada=" + dataChegada +
+                ", cor=" + cor +
+                ", nomeDoPai='" + nomeDoPai + '\'' +
+                ", nomeDaMae='" + nomeDaMae + '\'' +
+                ", ocupacao='" + ocupacao + '\'' +
+                ", escolaridade='" + escolaridade + '\'' +
+                ", formacao='" + formacao + '\'' +
+                ", ondeEstuda='" + ondeEstuda + '\'' +
+                ", pne=" + pne +
+                ", estudoPretendido='" + estudoPretendido + '\'' +
+                ", clube='" + clube + '\'' +
+                ", associacao='" + associacao + '\'' +
+                ", sindicato='" + sindicato + '\'' +
+                ", religiao='" + religiao + '\'' +
+                ", sexo='" + sexo + '\'' +
+                ", solicCupomFiscal=" + solicCupomFiscal +
+                ", pretendeEstudar=" + pretendeEstudar +
+                ", dependentes=" + dependentes +
+                '}';
+    }
+
     public CadastroMunicipe() { // Fiz um construtor vazio para que serja possivel instanciar o obj antes de ter todos os atributos
     }
 
