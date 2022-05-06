@@ -33,9 +33,61 @@ public class CadastroMunicipe {
     private String associacao;
     private String sindicato;
     private String religiao;
+    private String sexo;
     private boolean solicCupomFiscal;
     private boolean pretendeEstudar;
+    private boolean dependentes;
 
+    public CadastroMunicipe() { // Fiz um construtor vazio para que serja possivel instanciar o obj antes de ter todos os atributos
+    }
+
+    public CadastroMunicipe(String nome, String cpf, Rg rg, Titulo titulo, Date nascimento, String naturalidade, String nascionalidade, Enum<EstadoCivil> estadoCivilEnum, Endereco endereco, String fone, String celular, Date dataChegada, Enum<Cor> cor, String nomeDoPai, String nomeDaMae, String ocupacao, String escolaridade, String formacao, String ondeEstuda, Enum<Pne> pne, String estudoPretendido, String clube, String associacao, String sindicato, String religiao, String sexo, boolean solicCupomFiscal, boolean pretendeEstudar, boolean dependentes) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.titulo = titulo;
+        this.nascimento = nascimento;
+        this.naturalidade = naturalidade;
+        this.nascionalidade = nascionalidade;
+        this.estadoCivilEnum = estadoCivilEnum;
+        this.endereco = endereco;
+        this.fone = fone;
+        this.celular = celular;
+        this.dataChegada = dataChegada;
+        this.cor = cor;
+        this.nomeDoPai = nomeDoPai;
+        this.nomeDaMae = nomeDaMae;
+        this.ocupacao = ocupacao;
+        this.escolaridade = escolaridade;
+        this.formacao = formacao;
+        this.ondeEstuda = ondeEstuda;
+        this.pne = pne;
+        this.estudoPretendido = estudoPretendido;
+        this.clube = clube;
+        this.associacao = associacao;
+        this.sindicato = sindicato;
+        this.religiao = religiao;
+        this.sexo = sexo;
+        this.solicCupomFiscal = solicCupomFiscal;
+        this.pretendeEstudar = pretendeEstudar;
+        this.dependentes = dependentes;
+    }
+
+    public boolean isDependentes() {
+        return dependentes;
+    }
+
+    public void setDependentes(boolean dependentes) {
+        this.dependentes = dependentes;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
 
     public String getNome() {
         return nome;
