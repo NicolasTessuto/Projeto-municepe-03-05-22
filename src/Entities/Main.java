@@ -1,5 +1,6 @@
 package Entities;
 
+import Enums.Cor;
 import Enums.EstadoCivil;
 
 import java.text.ParseException;
@@ -22,7 +23,7 @@ public class Main {
                 case 1:
                     System.out.print("Por favor informe os seguintes dados:\nNome: ");
                     cadastroMunicipe.setNome(sc.nextLine());
-                    System.out.print("\nCPF: ");
+                    System.out.print("CPF: ");
                     cadastroMunicipe.setCpf(sc.nextLine());
                     Rg rg = new Rg();
                     System.out.print("\nNº RG: ");
@@ -71,7 +72,21 @@ public class Main {
                     auxData = sc.nextLine();
                     cadastroMunicipe.setDataChegada(new SimpleDateFormat("dd/MM/yyyy").parse(auxData));
                     System.out.print("\nCor da pele:  (Branco = 1, negra = 2, amrela = 3, Pardo = 4\n");
-                    int enumCor = sc.nextInt();
+                    int cor = sc.nextInt();
+                    if(cor == 1){
+                        cadastroMunicipe.setCor(Cor.Branco);
+                    }
+                    else if(cor == 2){
+                        cadastroMunicipe.setCor(Cor.Pardo);
+                    }
+                    else if(cor == 3){
+                        cadastroMunicipe.setCor(Cor.amrela);
+                    }
+                    else if(cor == 4){
+                        cadastroMunicipe.setCor(Cor.negra);
+                    }
+                    else
+                        cadastroMunicipe.setCor(Cor.Pardo);
                     System.out.print("\nNome do pai: ");
                     cadastroMunicipe.setNomeDoPai(sc.nextLine());
                     System.out.print("\nNome da mae: ");
@@ -99,7 +114,9 @@ public class Main {
                     listaDeMunicipes.add(cadastroMunicipe);
                     break;
                 case 2:
-
+                    for (CadastroMunicipe cadastroMunicipe1 : listaDeMunicipes){
+                        System.out.println(cadastroMunicipe);
+                    }
                     break;
                 case 3:
                     System.out.println("entrou 3 ");

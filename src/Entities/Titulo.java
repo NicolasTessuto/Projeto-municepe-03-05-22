@@ -6,6 +6,15 @@ public class Titulo {
     private String secao;
     private String zona;
 
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "titulo=" + titulo +
+                ", secao='" + secao + '\'' +
+                ", zona='" + zona + '\'' +
+                '}';
+    }
+
     public int getTitulo() {
         return titulo;
     }

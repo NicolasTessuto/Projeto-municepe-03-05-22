@@ -9,6 +9,17 @@ public class Rg {
     private String uf;
     private Date data;
 
+
+    @Override
+    public String toString() {
+        return "Rg{" +
+                "numRg=" + numRg +
+                ", emissor='" + emissor + '\'' +
+                ", uf='" + uf + '\'' +
+                ", data=" + data +
+                '}';
+    }
+
     public int getNumRg() {
         return numRg;
     }

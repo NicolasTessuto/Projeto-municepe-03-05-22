@@ -1,5 +1,5 @@
 package Enums;
 
 public enum Pne {
-    FISICA,MENTAL,AUDITIVA, VISUAL;
+    FISICA, MENTAL, AUDITIVA, VISUAL;
 }
