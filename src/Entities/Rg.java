@@ -12,12 +12,12 @@ public class Rg {
 
     @Override
     public String toString() {
-        return "Rg{" +
-                "numRg=" + numRg +
-                ", emissor='" + emissor + '\'' +
-                ", uf='" + uf + '\'' +
-                ", data=" + data +
-                '}';
+        return "Rg[" +
+                "nºRg=" + numRg +
+                "|Emissor='" + emissor + '\'' +
+                "|UF='" + uf + '\'' +
+                "|Data Emi=" + data +
+                ']';
     }
 
     public String getNumRg() {

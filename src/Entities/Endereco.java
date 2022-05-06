@@ -8,11 +8,11 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco{" +
-                "numero=" + numero +
-                ", endereco='" + endereco + '\'' +
-                ", bairro='" + bairro + '\'' +
-                '}';
+        return "Endereco[" +
+                "| Numero=" + numero +
+                "| Endereco='" + endereco +
+                "| Bairro='" + bairro +
+                ']';
     }
 
     public int getNumero() {

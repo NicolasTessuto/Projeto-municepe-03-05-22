@@ -8,11 +8,11 @@ public class Titulo {
 
     @Override
     public String toString() {
-        return "Titulo{" +
-                "titulo=" + titulo +
-                ", secao='" + secao + '\'' +
-                ", zona='" + zona + '\'' +
-                '}';
+        return "Titulo[" +
+                "|Numero do Titulo=" + titulo +
+                "|secao='" + secao +
+                "|Zona='" + zona + 
+                ']';
     }
 
     public int getTitulo() {

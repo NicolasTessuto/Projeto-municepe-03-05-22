@@ -4,10 +4,12 @@ import Enums.Cor;
 import Enums.EstadoCivil;
 import Enums.Pne;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class CadastroMunicipe {
 
+    SimpleDateFormat formatcao = new SimpleDateFormat("dd/MM/yyyy");
     private String nome;
     private String cpf;
     private Rg rg;
@@ -41,42 +43,43 @@ public class CadastroMunicipe {
     @Override
     public String toString() {
         return "CadastroMunicipe{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", rg=" + rg +
-                ", titulo=" + titulo +
-                ", nascimento=" + nascimento +
-                ", naturalidade='" + naturalidade + '\'' +
-                ", nascionalidade='" + nascionalidade + '\'' +
-                ", estadoCivilEnum=" + estadoCivilEnum +
-                ", endereco=" + endereco +
-                ", fone='" + fone + '\'' +
-                ", celular='" + celular + '\'' +
-                ", dataChegada=" + dataChegada +
-                ", cor=" + cor +
-                ", nomeDoPai='" + nomeDoPai + '\'' +
-                ", nomeDaMae='" + nomeDaMae + '\'' +
-                ", ocupacao='" + ocupacao + '\'' +
-                ", escolaridade='" + escolaridade + '\'' +
-                ", formacao='" + formacao + '\'' +
-                ", ondeEstuda='" + ondeEstuda + '\'' +
-                ", pne=" + pne +
-                ", estudoPretendido='" + estudoPretendido + '\'' +
-                ", clube='" + clube + '\'' +
-                ", associacao='" + associacao + '\'' +
-                ", sindicato='" + sindicato + '\'' +
-                ", religiao='" + religiao + '\'' +
-                ", sexo='" + sexo + '\'' +
-                ", solicCupomFiscal=" + solicCupomFiscal +
-                ", pretendeEstudar=" + pretendeEstudar +
-                ", dependentes=" + dependentes +
+                "nome='" + nome + "\n" +
+                ", cpf='" + cpf + "\n" +
+                ", rg=" + rg + "\n" +
+                ", titulo=" + titulo + "\n" +
+                ", nascimento=" + nascimento + "\n" +
+                ", naturalidade='" + naturalidade + "\n" +
+                ", nacionalidade='" + nascionalidade + "\n" +
+                ", estadoCivilEnum=" + estadoCivilEnum + "\n" +
+                ", endereco=" + endereco + "\n" +
+                ", fone='" + fone + "\n" +
+                ", celular='" + celular + "\n" +
+                ", dataChegada=" + dataChegada+ "\n" +
+                ", cor=" + cor + "\n" +
+                ", nomeDoPai='" + nomeDoPai + "\n" +
+                ", nomeDaMae='" + nomeDaMae + "\n" +
+                ", ocupacao='" + ocupacao + "\n" +
+                ", escolaridade='" + escolaridade + "\n" +
+                ", formacao='" + formacao + "\n" +
+                ", ondeEstuda='" + ondeEstuda + "\n" +
+                ", pne=" + pne + "\n" +
+                ", estudoPretendido='" + estudoPretendido + "\n" +
+                ", clube='" + clube + "\n" +
+                ", associacao='" + associacao + "\n" +
+                ", sindicato='" + sindicato + "\n" +
+                ", religiao='" + religiao + "\n" +
+                ", sexo='" + sexo + "\n" +
+                ", solicCupomFiscal=" + solicCupomFiscal + "\n" +
+                ", pretendeEstudar=" + pretendeEstudar + "\n" +
+                ", dependentes=" + dependentes + "\n" +
                 '}';
     }
 
     public CadastroMunicipe() { // Fiz um construtor vazio para que serja possivel instanciar o obj antes de ter todos os atributos
     }
 
-    public CadastroMunicipe(String nome, String cpf, Rg rg, Titulo titulo, Date nascimento, String naturalidade, String nascionalidade, Enum<EstadoCivil> estadoCivilEnum, Endereco endereco, String fone, String celular, Date dataChegada, Enum<Cor> cor, String nomeDoPai, String nomeDaMae, String ocupacao, String escolaridade, String formacao, String ondeEstuda, Enum<Pne> pne, String estudoPretendido, String clube, String associacao, String sindicato, String religiao, String sexo, boolean solicCupomFiscal, boolean pretendeEstudar, boolean dependentes) {
+    public CadastroMunicipe(String nome, String cpf, Rg rg, Titulo titulo, Date nascimento, String naturalidade, String nascionalidade, Enum<EstadoCivil> estadoCivilEnum, Endereco endereco, String fone, String celular, Date
+            dataChegada, Enum<Cor> cor, String nomeDoPai, String nomeDaMae, String ocupacao, String escolaridade, String formacao, String ondeEstuda, Enum<Pne> pne, String estudoPretendido, String clube, String associacao, String sindicato, String religiao, String sexo, boolean solicCupomFiscal, boolean pretendeEstudar, boolean dependentes) {
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;
