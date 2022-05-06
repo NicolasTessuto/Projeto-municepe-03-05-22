@@ -14,12 +14,13 @@ public class Main {
             selecUser = sc.nextInt();
             switch(selecUser){
                 case 1:
-                    aaa;
+                    System.out.println("entrou 1 ");
                     break;
                 case 2:
-                    bbb;
+                    System.out.println("entrou 2 ");
                     break;
                 case 3:
+                    System.out.println("entrou 3 ");
                     break;
                 default:
                     System.out.println("Opção inválida");
