@@ -6,6 +6,15 @@ public class Endereco {
     private String endereco;
     private String bairro;
 
+    @Override
+    public String toString() {
+        return "Endereco{" +
+                "numero=" + numero +
+                ", endereco='" + endereco + '\'' +
+                ", bairro='" + bairro + '\'' +
+                '}';
+    }
+
     public int getNumero() {
         return numero;
     }

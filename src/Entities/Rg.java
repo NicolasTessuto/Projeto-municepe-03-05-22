@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Rg {
 
-    private int numRg;
+    private String numRg;
     private String emissor;
     private String uf;
     private Date data;
@@ -20,11 +20,11 @@ public class Rg {
                 '}';
     }
 
-    public int getNumRg() {
+    public String getNumRg() {
         return numRg;
     }
 
-    public void setNumRg(int numRg) {
+    public void setNumRg(String numRg) {
         this.numRg = numRg;
     }
 

@@ -21,13 +21,14 @@ public class Main {
             selecUser = sc.nextInt();
             switch(selecUser){
                 case 1:
+                    sc.nextLine();
                     System.out.print("Por favor informe os seguintes dados:\nNome: ");
                     cadastroMunicipe.setNome(sc.nextLine());
                     System.out.print("CPF: ");
                     cadastroMunicipe.setCpf(sc.nextLine());
                     Rg rg = new Rg();
                     System.out.print("\nNº RG: ");
-                    rg.setNumRg(sc.nextInt());
+                    rg.setNumRg(sc.nextLine());
                     System.out.print("\nEmissor: ");
                     rg.setEmissor(sc.nextLine());
                     System.out.print("\nData de emissão: (dd/MM/yyyy): ");
@@ -37,6 +38,7 @@ public class Main {
                     Titulo titulo = new Titulo();
                     System.out.print("\nNumero do titulo: ");
                     titulo.setTitulo(sc.nextInt());
+                    sc.nextLine();
                     System.out.print("\nSeção: ");
                     titulo.setSecao(sc.nextLine());
                     System.out.print("\nZona: ");
@@ -56,6 +58,7 @@ public class Main {
                     int enumEstadoCivil = sc.nextInt();
                     System.out.print("\nDependentes ? (True/false): ");
                     cadastroMunicipe.setDependentes(sc.nextBoolean());
+                    sc.nextLine();
                     Endereco endereco = new Endereco();
                     System.out.print("\nEndereco: ");
                     endereco.setEndereco(sc.nextLine());
@@ -63,6 +66,7 @@ public class Main {
                     endereco.setBairro(sc.nextLine());
                     System.out.print("\nNumero: ");
                     endereco.setNumero(sc.nextInt());
+                    sc.nextLine();
                     cadastroMunicipe.setEndereco(endereco);
                     System.out.print("\nTelefone: ");
                     cadastroMunicipe.setFone(sc.nextLine());
@@ -87,6 +91,7 @@ public class Main {
                     }
                     else
                         cadastroMunicipe.setCor(Cor.Pardo);
+                    sc.nextLine();
                     System.out.print("\nNome do pai: ");
                     cadastroMunicipe.setNomeDoPai(sc.nextLine());
                     System.out.print("\nNome da mae: ");
@@ -99,9 +104,11 @@ public class Main {
                     cadastroMunicipe.setOndeEstuda(sc.nextLine());
                     System.out.print("\nPretende voltar a estudar (True/False): ");
                     cadastroMunicipe.setPretendeEstudar(sc.nextBoolean());
+                    sc.nextLine();
                     System.out.print("\nPne (Portador de necessidades expeciais): ");
                     int enumPne = sc.nextInt();
                     System.out.print("\nEstudo pretendido: ");
+                    sc.nextLine();
                     cadastroMunicipe.setEstudoPretendido(sc.nextLine());
                     System.out.print("\nAssociação: ");
                     cadastroMunicipe.setAssociacao(sc.nextLine());
