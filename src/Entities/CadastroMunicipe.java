@@ -48,17 +48,15 @@ public class CadastroMunicipe {
     public static void Imprimir(ArrayList<CadastroMunicipe> listaDeMunicipes, CadastroMunicipe cadastroMunicipe) throws ParseException {
         Menu menu = new Menu();
         if(verificaListaVazia(listaDeMunicipes)){
-            menu.menuInicial();
-            menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
+        System.out.println("A LISTA DE MUNICIPES ESTA VAZIA");
         }
         else{
             for (CadastroMunicipe cadastroMunicipe1 : listaDeMunicipes){
                 System.out.println(cadastroMunicipe1);
-                menu.menuInicial();
-                menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
             }
-
         }
+        menu.menuInicial();
+        menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
     }
 
     public static void Cadastrar(ArrayList<CadastroMunicipe> listaDeMunicipes, CadastroMunicipe cadastroMunicipe) throws ParseException {
