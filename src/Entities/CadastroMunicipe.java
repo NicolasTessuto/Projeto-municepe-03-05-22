@@ -55,8 +55,6 @@ public class CadastroMunicipe {
                 System.out.println(cadastroMunicipe1);
             }
         }
-        menu.menuInicial();
-        menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
     }
 
     public static void Cadastrar(ArrayList<CadastroMunicipe> listaDeMunicipes, CadastroMunicipe cadastroMunicipe) throws ParseException {
@@ -189,9 +187,8 @@ public class CadastroMunicipe {
         System.out.print("Religião: ");
         cadastroMunicipe.setReligiao(sc.nextLine());*/
         listaDeMunicipes.add(cadastroMunicipe);
-        System.out.println("Cadastro finalizado, o  que deseja fazer agora? ");
-        menu.menuInicial();
-        menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
+        System.out.println("CADASTRO FINALIZADO");
+
 
     }
 
@@ -223,8 +220,6 @@ public class CadastroMunicipe {
             if (listaDeMunicipes.get(i).getCpf().equals(auxCpf)) {
                 listaDeMunicipes.remove(i);
                 System.out.println("MUNICIPE REMOVIDO COM SUCESSO!");
-                menu.menuInicial();
-                menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
             } else {
                 System.out.println("NAO FOI ENCONTRADO NENHUM MUNICIPE COM ESSE CPF...");
                 removeMunicipe(listaDeMunicipes, cadastroMunicipe);

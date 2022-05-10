@@ -11,7 +11,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Menu menu = new Menu();
         System.out.println("-=-=BEM-VINDO AO SISTEMA=-=-");
-        menu.menuInicial();
         menu.opcSelcUser(listaDeMunicipes, cadastroMunicipe);
         }
     }
