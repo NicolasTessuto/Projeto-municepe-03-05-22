@@ -16,7 +16,7 @@ public class Rg {
                 "nºRg=" + numRg +
                 "|Emissor='" + emissor + '\'' +
                 "|UF='" + uf + '\'' +
-                "|Data Emi=" + data +
+                "|Data Emissão=" + data +
                 ']';
     }
 

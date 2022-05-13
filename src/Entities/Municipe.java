@@ -47,37 +47,10 @@ public class Municipe {
 
     @Override
     public String toString() {
-        return "CadastroMunicipe{" +
-                "nome='" + nome + "\n" +
-                ", cpf='" + cpf + "\n" +
-                ", rg=" + rg + "\n" +
-                ", titulo=" + titulo + "\n" +
-                ", nascimento=" + nascimento + "\n" +
-                ", naturalidade='" + naturalidade + "\n" +
-                ", nacionalidade='" + nascionalidade + "\n" +
-                ", estadoCivilEnum=" + estadoCivilEnum + "\n" +
-                ", endereco=" + endereco + "\n" +
-                ", fone='" + fone + "\n" +
-                ", celular='" + celular + "\n" +
-                ", dataChegada=" + dataChegada + "\n" +
-                ", cor=" + cor + "\n" +
-                ", nomeDoPai='" + nomeDoPai + "\n" +
-                ", nomeDaMae='" + nomeDaMae + "\n" +
-                ", ocupacao='" + ocupacao + "\n" +
-                ", escolaridade='" + escolaridade + "\n" +
-                ", formacao='" + formacao + "\n" +
-                ", ondeEstuda='" + ondeEstuda + "\n" +
-                ", pne=" + pne + "\n" +
-                ", estudoPretendido='" + estudoPretendido + "\n" +
-                ", clube='" + clube + "\n" +
-                ", associacao='" + associacao + "\n" +
-                ", sindicato='" + sindicato + "\n" +
-                ", religiao='" + religiao + "\n" +
-                ", sexo='" + sexo + "\n" +
-                ", solicCupomFiscal=" + solicCupomFiscal + "\n" +
-                ", pretendeEstudar=" + pretendeEstudar + "\n" +
-                ", dependentes=" + dependentes + "\n" +
-                '}';
+        return "MUNICIPES CADASTRADOS: {" +
+                "[NOME]= " + nome + "\n" +
+                "[CPF]= " + cpf + "\n" +
+                "[RG]= " + rg + "\n";
     }
 
     public Municipe() { // Fiz um construtor vazio para que serja possivel instanciar o obj antes de ter todos os atributos
