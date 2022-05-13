@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
-        ArrayList<Municipe> listaDeMunicipes = new ArrayList<>();
+        ArrayList<Municipe> listaDeMunicipes = new ArrayList<Municipe>();
         Menu menu = new Menu();
         System.out.println("-=-=BEM-VINDO AO SISTEMA=-=-");
         menu.opcSelcUser(listaDeMunicipes);

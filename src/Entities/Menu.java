@@ -189,6 +189,7 @@ public class Menu {
                         if (m.getCpf().equals(auxCpf)){
                             listaDeMunicipes.remove(m);
                             System.out.println("MUNICIPE REMOVIDO COM SUCESSO!");
+                            break;
                         }
                         else {
                             System.out.println("NAO FOI ENCONTRADO NENHUM MUNICIPE COM ESSE CPF...");
